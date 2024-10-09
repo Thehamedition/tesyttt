@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHamEdition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: flex-start; /* Align items to the top */
+            height: 100vh;
+            text-align: center; /* Center text */
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0.2em 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 0.2em 0;
+            color: white; /* Change color to white */
+        }
+
+        .game-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            margin-top: 20px; /* Adjust margin to position below header */
+            align-self: flex-start; /* Align game boxes to the top left */
+        }
+
+        .game-box {
+            width: 160px; /* 16" in pixels */
+            height: 160px; /* 16" in pixels */
+            border: 2px solid white; /* White border */
+            border-radius: 10px; /* Slightly rounded corners */
+            display: inline-block;
+            margin-right: 20px; /* Add space between boxes */
+            position: relative;
+            overflow: hidden; /* Ensures image fits nicely */
+            cursor: pointer; /* Changes cursor to pointer */
+        }
+
+        .game-box img {
+            width: 100%; /* Ensure image fits the box */
+            height: 100%; /* Ensure image fits the box */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .game-name {
+            position: absolute;
+            bottom: 5px; /* Position name at the bottom */
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white; /* Change color to white */
+            font-size: 1.2em; /* Adjust font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TheHamEdition</h1>
+        <h2>Coded And Programed By Caiden Grant</h2>
+    </div>
+
+    <div class="game-container"> <!-- Flex container for game boxes -->
+        <div class="game-box" onclick="location.href='drift-hunters-page.html'"> <!-- Drift Hunters Box -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FCE3xjcLi3s98T0x0VhxCnZRh61mNiDTqQ&s" alt="Drift Hunters">
+            <div class="game-name">Drift Hunters</div>
+        </div>
+
+        <div class="game-box" onclick="location.href='poly-track-page.html'"> <!-- Poly Track Box -->
+            <img src="https://pixiapi.com/wp-content/uploads/2024/05/poly-track-game-icon.png" alt="Poly Track">
+            <div class="game-name">Poly Track</div>
+        </div>
+    </div>
+</body>
+</html>
